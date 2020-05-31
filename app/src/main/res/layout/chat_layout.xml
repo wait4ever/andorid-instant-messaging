@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+
+    >
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/right_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="14dp"
+            android:text="wode"
+            android:layout_gravity="right"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_textview1"
+            android:paddingRight="2dp">
+        <TextView
+            android:id="@+id/right_chatContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="25dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="left"
+            />
+        </LinearLayout>
+            <View
+                android:layout_width="13px"
+                android:layout_height="match_parent"></View>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/sender_image"
+                android:background="@drawable/default_portrait"
+                android:paddingLeft="10dp"
+                ></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="2dp"
+            android:text="nide"
+            android:textSize="14dp"
+
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/unnamed"
+                android:paddingLeft="10dp"
+                android:id="@+id/receiver_image"
+                ></ImageView>
+            <View
+                android:layout_width="13px"
+                android:layout_height="match_parent"></View>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_textview1"
+                android:paddingRight="2dp">
+                <TextView
+                    android:id="@+id/chatContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="25dp"
+                    android:layout_gravity="left"
+                    />
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
